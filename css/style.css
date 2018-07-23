@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  background-color: rebeccapurple;
+}
+
+.wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.nav__ul.slimmenu {
+  width: auto;
+}
+
+.nav__ul.slimmenu li {
+  background-color: transparent;
+  border: none;
+}
+
+.nav__ul.slimmenu li a {
+  padding: 20px 35px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+}
+
+.nav__ul.slimmenu li a:hover {
+  background-color: rgb(88, 51, 126);
+}
+
+.nav__ul.slimmenu li .sub-toggle {
+  background-color: transparent;
+  width: 30px;
+}
+
+.nav__ul.slimmenu li .sub-toggle>i {
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav__ul.slimmenu li ul {
+  padding: 0;
+  background: rebeccapurple;
+}
+
+.nav__ul.slimmenu li ul li {
+  width: 100%;
+}
+
+.nav__ul.slimmenu ul li a {
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.hero {
+  height: 100vh;
+  background-color: #dddddd;
+}
+
+@media(max-width: 768px) {
+  .nav-bar {
+    position: relative;
+    padding: 15px 0;
+  }
+  .menu-collapser {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+  .collapse-button {
+    position: static;
+    width: auto;
+    transform: translate(0);
+    padding: 0;
+    background-color: transparent;
+  }
+  .collapse-button .icon-bar {
+    margin: 4px 0;
+  }
+  .nav__ul.slimmenu.collapsed {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rebeccapurple;
+  }
+  .nav__ul.slimmenu li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .nav__ul.slimmenu li .sub-toggle:before {
+    margin-right: 0;
+  }
+  .nav__ul.slimmenu.collapsed li .sub-toggle {
+    height: 42px;
+    border-left: 1px solid #a09595;
+    width: 40px;
+  }
+  .nav__ul.slimmenu.collapsed li a {
+    border-bottom: none;
+    border-top: 1px solid #a09595;
+  }
+  .nav__ul.slimmenu ul li a {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .collapse-button:hover, .collapse-button:focus {
+    background-color: transparent;
+  }
+}
